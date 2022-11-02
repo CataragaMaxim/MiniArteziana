@@ -1,0 +1,97 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0px;
+  background-color: #303e47;
+  color: #e4e8e9;
+}
+
+#main-part {
+  display: flex;
+}
+
+#logo {
+  display: flex;
+  width: 50%;
+}
+
+#logo img {
+  width: 100%;
+}
+
+.main-info  {
+  padding-left: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-info p {
+  font-size: 30px; 
+  font-weight: bold;
+}
+
+.main-info ul {
+  list-style: none;
+  list-style-image: url(../img/tick.png);
+  font-size: 20px;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+#contact img {
+  width: 70px;
+}
+
+#contact .tel-number {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #e4e8e9;
+}
+
+#contact .tel-number_text {
+  padding-top: 20px;
+}
+
+.social-media {
+  display: flex;
+}
+
+@media (max-width: 1020px) {
+  #main-part {
+    flex-direction: column;
+  }
+  #logo {
+    width: 100%;
+  }
+  .main-info {
+    width: 90%;
+    margin: 5px;
+    justify-content: center;
+  }
+  .main-info p {
+    font-size: 20px; 
+  }
+  .main-info ul {
+    padding-left: 20px; 
+  }
+  #contact {
+    flex-direction: column;
+  }
+  #contact .tel-number_text {
+    padding-top: 12px;
+  }
+  #contact img {
+    width: 50px;
+  }
+  .social-media {
+    display: flex;
+  }
+}
